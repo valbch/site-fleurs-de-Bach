@@ -6,6 +6,8 @@ header {
   background-position: center;
   height: 95vh;
   border-bottom: 1px solid #000;
+
+  position: relative;
 }
 .navbar {
   background-color: #1e70b7;
@@ -21,8 +23,11 @@ header {
 }
 
 .text-intro {
-  padding-left: 20px;
-  padding-top: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 h1 {
   font-size: 80px;
@@ -45,7 +50,7 @@ h1 {
   margin: 0;
   padding: 0px;
   color: #ffffff;
-  line-height: 0.5;
+  line-height: 0.9;
   font-family: "lato";
   text-shadow: 2px 2px #000000;
   font-family: "Sorts Mill Goudy", serif;
@@ -102,7 +107,6 @@ h1 {
 /* Mon parcours */
 
 #aPropos {
-  margin-top: 75px;
   padding-bottom: 75px;
   border-bottom: 1px dashed #3e3e3e;
 }
@@ -158,7 +162,7 @@ button.btn {
 #ban2 {
   position: relative;
   min-height: 300px;
-  background: url("images/fond2.PNG");
+  background: url("images/fond2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -323,27 +327,27 @@ hr {
   opacity: 0.6;
 }
 
+/* section contact */
+.lead {
+  color: #7d8408;
+}
+
 /* Média Queries */
 
-@media screen and (max-width: 800px) {
-  /* Header */
-
+@media screen and (max-width: 1024px) {
   header {
-    height: 75vh;
+    height: 95vh;
+    position: relative;
   }
-
   .text-intro {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-left: 10px;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
   }
 
-  .preTxt {
-    font-size: 40px;
-  }
-
-  h1 {
-    font-size: 81px;
-  }
   .navbar a {
     font-size: 11px;
 
@@ -351,14 +355,22 @@ hr {
   }
 }
 
-/* section contact */
-.lead {
-  color: #7d8408;
-}
-
-/* Barre de progrés mode petit*/
-
 @media screen and (max-width: 762px) {
+  header {
+    height: 45vh;
+    position: relative;
+  }
+  .text-intro {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .navbar a {
+    font-size: 11px;
+
+    transition: all 0.4s ease;
+  }
   #progress {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -370,26 +382,50 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-  /* Header */
-
   header {
     height: 55vh;
   }
-
-  .text-intro {
-    padding-top: 200px;
+  h1 {
+    line-height: 1;
+    font-size: 40px;
   }
+  .preTxt {
+    line-height: 1;
+    font-size: 20px;
+  }
+  .offreH {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .price h2 {
+    font-size: 28px;
+  }
+
   .text-intro {
     transform: scale(0.8);
   }
   .navbar-brand {
     font-size: 35px !important;
   }
-  .preTxt {
-    font-size: 15px;
+  .w-responsive {
+    padding-left: 5px;
   }
+}
 
-  h1 {
-    font-size: 30px;
+@media screen and (max-width: 320px) {
+  header {
+    height: 60vh;
+    position: relative;
+  }
+  .text-intro {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .w-responsive {
+    padding-left: 5px;
   }
 }

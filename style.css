@@ -10,7 +10,7 @@ header {
   position: relative;
 }
 .navbar {
-  background-color: #1e70b7;
+  background-color: red;
 }
 .nav-item:hover {
   opacity: 0.6;

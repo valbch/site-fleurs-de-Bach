@@ -29,8 +29,16 @@ header {
 
   transform: translate(-50%, -50%);
 }
+.card-title-intro {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #656565;
+  text-align: center;
+  padding: 5px;
+}
 h1 {
-  font-size: 80px;
+  font-size: 3.5em;
   line-height: 1;
   color: #ffffff;
   text-transform: uppercase;
@@ -46,7 +54,7 @@ h1 {
 
 .preTxt {
   z-index: 6;
-  font-size: 48px;
+  font-size: 3em;
   margin: 0;
   padding: 0px;
   color: #ffffff;
@@ -91,17 +99,25 @@ a {
 
 /* Les 3 cards */
 .card-title {
+  font-size: 2em;
+  font-weight: bold;
   font-family: "Lato", sans-serif;
   color: #3e3e3e;
+  text-align: center;
+  padding: 5px;
+}
+.card-text {
+  font-size: 1em;
 }
 
 .card-body {
   font-family: "lato";
   color: #656565;
+  font-size: 1em;
 }
 .card-header {
   font-family: "lato";
-  color: #2c2f4e;
+  color: #3e3e3e;
 }
 
 .scrollbar {
@@ -113,21 +129,19 @@ a {
 #aPropos {
   padding-bottom: 75px;
   border-bottom: 1px dashed #3e3e3e;
+  font-size: 1em;
 }
-h3 .btn {
-  font-family: "lato";
-  color: #2c2f4e;
-}
-.container {
-  font-family: "lato";
-  color: #2c2f4e;
+.titreParcours2 {
+  font-size: 2em;
 }
 
-button.btn {
+.container {
+  font-family: "lato";
   color: #3e3e3e;
 }
 
 .btn {
+  color: #3e3e3e;
   font-family: "lato";
 }
 
@@ -138,30 +152,6 @@ button.btn {
   padding-bottom: 100px;
 }
 
-/* ban1 premiere banniere */
-
-#ban1 {
-  position: relative;
-  background: url("img/banniere1.png");
-  background-position: right;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  /* pour centrer le bouton et les textes */
-  text-align: center;
-}
-
-/* Galerie */
-
-.h2Photos {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  font-family: "Lato";
-  font-size: 70px;
-}
-
-#galerie.container p {
-  padding-bottom: 40px;
-}
 /* seconde banniere */
 
 #ban2 {
@@ -181,17 +171,14 @@ button.btn {
 
 #carouselContent {
   margin-top: 70px;
-  font-size: 50px;
+  font-size: 3em;
   color: #3e3e3e;
   font-weight: lighter;
 }
 /*  Cartes */
-.card-text {
-  font-size: 3vh;
-  color: #3e3e3e;
-}
+
 .offreH {
-  font-size: 40px;
+  font-size: 2em;
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: "Lato", sans-serif;
@@ -203,7 +190,7 @@ button.btn {
 }
 
 .threeCards {
-  width: 300px;
+  width: 350px;
   height: 620px;
   margin: 30px auto;
   position: relative;
@@ -217,7 +204,7 @@ button.btn {
 
 .header {
   height: 200px;
-  width: 300px;
+  width: 350px;
   position: relative;
   font-family: "Lato";
   background: rgba(18, 31, 163, 0.2);
@@ -227,35 +214,30 @@ h2 {
   color: #3e3e3e;
 }
 
-.header h2 {
+#spanPrix {
   margin: 0;
   position: relative;
   top: 130px;
   text-align: center;
-
-  font-size: 15px;
-  color: #3e3e3e;
-}
-#spanPrix {
-  font-size: 40px;
+  font-size: 3em;
   color: #7d8408;
 }
 /* amteur pro etc titre des cartes*/
 .price {
   height: 120px;
-  width: 300px;
+  width: 350px;
   background: rgba(125, 132, 8, 0.5);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: absolute;
   top: 0;
 }
 
-.price h2 {
+.price h4 {
   margin: 0;
   text-align: center;
   color: #fff;
   font-family: "Lato", sans-serif;
-  font-size: 30px;
+  font-size: 2em;
   position: relative;
   top: 30px;
 }
@@ -268,6 +250,7 @@ h2 {
   font-family: "Lato";
   transition: all 0.2s ease-in;
   color: #3e3e3e;
+  font-size: 1em;
 }
 .details:hover {
   background: rgba(181, 208, 230, 0.1);
@@ -282,6 +265,7 @@ hr {
 #btn {
   background: white;
   height: 80px;
+  font-size: 1em;
 }
 
 #btn a {
@@ -341,10 +325,15 @@ hr {
 }
 
 /* section contact */
-.lead {
+.mt-2 {
+  font-size: 2em;
+}
+.md-form {
+  font-size: 1em;
+}
+.mb-md-0 {
   color: #7d8408;
 }
-
 /* texte en gras */
 
 strong {
@@ -367,18 +356,38 @@ strong {
 
     transform: translate(-50%, -50%);
   }
+  .col-lg-4 {
+    max-width: 100%;
+  }
 
   .navbar a {
     font-size: 11px;
 
     transition: all 0.4s ease;
   }
+
+  .card-title-intro {
+    font-size: 1em;
+  }
+  h3.card-title {
+    font-size: 1em;
+  }
+  .titreParcours2 {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
 }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 768px) {
   header {
-    height: 45vh;
+    height: 60vh;
     position: relative;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .preTxt {
+    font-size: 2em;
   }
   .text-intro {
     width: 100%;
@@ -386,21 +395,29 @@ strong {
     bottom: 0;
     left: 0;
   }
-  .navbar a {
-    font-size: 11px;
 
-    transition: all 0.4s ease;
+  .text-intro {
+    transform: scale(0.8);
   }
-  #progress {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .navbar-brand {
+    font-size: 35px !important;
+  }
+  .w-responsive {
+    padding-left: 5px;
+  }
+  .card-title-intro {
+    font-size: 1em;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+  .titreParcours2 {
+    font-size: 1em;
+    text-transform: uppercase;
   }
 
-  .competences {
-    padding-top: 50px;
-  }
   #carouselContent {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -409,16 +426,12 @@ strong {
     height: 55vh;
   }
   h1 {
-    line-height: 1;
-    font-size: 40px;
+    font-size: 2em;
   }
   .preTxt {
-    line-height: 1;
-    font-size: 20px;
+    font-size: 2em;
   }
-  .offreH {
-    font-size: 20px;
-  }
+
   h2 {
     font-size: 20px;
   }
@@ -443,16 +456,135 @@ strong {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   header {
     height: 60vh;
     position: relative;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .preTxt {
+    font-size: 2em;
   }
   .text-intro {
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  .card-title-intro {
+    font-size: 1em;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+  .titreParcours2 {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  .mt-2 {
+    font-size: 1em;
+  }
+  #headingOne {
+    padding: 0px;
+  }
+  #headingThree {
+    padding: 0px;
+  }
+  #headingTwo {
+    padding: 0;
+  }
+  .w-responsive {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    height: 60vh;
+    position: relative;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .preTxt {
+    font-size: 2em;
+  }
+  .text-intro {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .card-title-intro {
+    font-size: 1em;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+  .titreParcours2 {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  .mt-2 {
+    font-size: 1em;
+  }
+  #headingOne {
+    padding: 0px;
+  }
+  #headingThree {
+    padding: 0px;
+  }
+  #headingTwo {
+    padding: 0;
+  }
+  .w-responsive {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    height: 60vh;
+    position: relative;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .preTxt {
+    font-size: 2em;
+  }
+  .text-intro {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .card-title-intro {
+    font-size: 1em;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+  .titreParcours2 {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  .mt-2 {
+    font-size: 1em;
+  }
+  #headingOne {
+    padding: 0px;
+  }
+  #headingThree {
+    padding: 0px;
+  }
+  #headingTwo {
+    padding: 0;
   }
   .w-responsive {
     padding-left: 5px;

@@ -1,4 +1,3 @@
-<?php die; ?>
 <!DOCTYPE html>
 <html lang="en">
   http://ogp.me/ns#
